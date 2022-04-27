@@ -45,11 +45,17 @@ header {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
 }
 
 .logoArgProg {
     width: 200px;
     margin-top: 25;
+}
+
+.logoArgProg:hover {
+    transform: translateY(10px) translateX(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 .social {
@@ -72,7 +78,8 @@ header {
 }
 
 .social img:hover {
-    width: 55px;
+    transform: translateY(-10px);
+    width: 60px;
 }
 
 img.botonlogin {
