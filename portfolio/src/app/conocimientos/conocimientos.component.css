@@ -1,0 +1,183 @@
+/* Conocimientos */
+
+.conocimientos h1 {
+    font-size: 40px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    color: black;
+}
+
+.conocimientos h2 {
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+}
+
+.porcentaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 38vh;
+    background: white;
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .card {
+    position: relative;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 23px;
+}
+
+.container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height: 100%;
+    background: white;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.porcent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #fff;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.porcent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.porcent .number h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.card:hover .porcent .number h2 {
+    color: rgb(0, 0, 0);
+    font-size: 53px;
+}
+
+.porcent .number h2 span {
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    position: relative;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+svg .svgprogres {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-85deg)!important;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #e79595a2;
+    stroke-width: 10;
+    stroke-linecap: round !important;
+    transform: translate(5px, 5px);
+}
+
+
+/*Claculo para simular el porcent*/
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80)/100);
+    stroke: rgb(175, 29, 163);
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80)/100);
+    stroke: rgb(175, 29, 163);
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 30)/100);
+    stroke: rgb(175, 29, 163);
+}
+
+@media only screen and (max-width:600px) {
+    .porcentaje {
+        height: auto;
+        margin-left: 30px;
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and(max-width: 1068px) {
+    .container {
+        max-width: 80rem;
+        min-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .container {
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 2.5rem;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,181 @@
+.titulo-1 {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo-2 {
+    color: #642a73;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.sobre-nosotros {
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us {
+    width: 40%;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.contenido-textos h3 span {
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 10px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media only screen and (max-width:600px) {
+    .porcentaje {
+        height: auto;
+        margin-left: 30px;
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and(max-width: 1068px) {
+    .container {
+        max-width: 80rem;
+        min-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .container {
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 2.5rem;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+
+/*  Our team */
+
+.about-services {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind {
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img {
+    width: 90%;
+}
+
+.servicio-ind h3 {
+    margin: 10px 0;
+}
+
+.servicio-ind p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* footer */
+
+footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px) {
+    
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+    .imagen-about-us {
+        width: 90%;
+    }
+}
+ /* ABOUT US */
+@media screen and (max-width:500px) {
+  
+    .imagen-about-us {
+        margin-bottom: 60px;
+        width: 99%;
+    }
+    .sobre-nosotros .contenido-textos {
+        width: 95%;
+    }
+}
