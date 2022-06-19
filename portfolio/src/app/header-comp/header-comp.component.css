@@ -1,18 +1,16 @@
 header {
     width: 100%;
     height: 600px;
-    background: #bc4e9c;
+    background: #fff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(204, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../../assets/img1.jpg);
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../../assets/img1.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(193, 28%, 55%, 0.459), hsla(189, 78%, 57%, 0.664)), url(../../assets/img1.jpg);
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../../assets/img1.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
 }
-
 
 .logoArgProg {
     width: 200px;
@@ -86,11 +84,9 @@ header .textos-header {
     header {
         background-position: center;
     }
-    }
+}
 
 @media screen and (max-width:500px) {
-
-
     .social {
         display: flex;
         flex-wrap: wrap;
@@ -110,8 +106,6 @@ header .textos-header {
         margin-right: 0%;
         margin-left: 0%;
     }
- 
-   
     .textos-header h1 {
         font-size: 35px;
     }

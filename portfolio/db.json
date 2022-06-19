@@ -1,0 +1,32 @@
+{
+    "persona": [{
+        "id": 1,
+        "nombre": "Fernando Ulises",
+        "apellido": "Tataren",
+        "titulo": "Full Stack Developer JR!"
+    }],
+
+
+    "Estudios": [{
+            "id": 1,
+            "nombreEstudio": "Full Stack Developer",
+            "Institucion": "#Yo Programo - Segunda Etapa cursando año 2022",
+            "fechaInicio": "2022",
+            "fechaFin": "2022"
+        },
+
+        {
+            "id": 2,
+            "nombreEstudio": "Full Stack Developer",
+            "Institucion": "#Se Programar - Primera Etapa año 2021",
+            "fechaInicio": "2021",
+            "fechaFin": "2021,"
+        }
+    ],
+
+
+    "sobreMi": [{
+        "id": 1,
+        "texto": "Soy una persona entusiasta con ganas de aprender, explorar y crecer."
+    }]
+}

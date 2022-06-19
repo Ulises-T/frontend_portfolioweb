@@ -9,6 +9,9 @@ import { ExpLaboralComponent } from './exp-laboral/exp-laboral.component';
 import { ConocimientosComponent } from './conocimientos/conocimientos.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import {HttpClientModule} from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -18,11 +21,13 @@ import { FooterComponent } from './footer/footer.component';
     ExpLaboralComponent,
     ConocimientosComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
