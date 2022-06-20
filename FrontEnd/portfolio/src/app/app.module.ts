@@ -10,7 +10,9 @@ import { ConocimientosComponent } from './conocimientos/conocimientos.component'
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -22,7 +24,7 @@ import {HttpClientModule} from '@angular/common/http'
     ConocimientosComponent,
     ProyectosComponent,
     FooterComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
