@@ -1,15 +1,13 @@
 export class Estudios {
     id?:number;
-    nombreEstudio: string;
-    institucion: string;
-    fechaInicio:string
-    fechaFin: string
+    nombreEst: string;
+    fechaEst:string
+    descripcionEst: string;
     
-    constructor(nombreEstudio: string,  institucion: string, fechaInicio: string, fechaFin: string ){
-        this.nombreEstudio = nombreEstudio;
-        this.institucion = institucion;
-        this.fechaInicio = fechaInicio;
-        this.fechaFin = fechaFin;
+    constructor(nombreEst: string,  fechaEst: string, descripcionEst: string){
+        this.nombreEst = nombreEst;
+        this.fechaEst = fechaEst;
+        this.descripcionEst = descripcionEst;
     }
 
 }

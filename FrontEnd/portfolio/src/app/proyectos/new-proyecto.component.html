@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreProyecto">Nombre del Proyecto</label>
+                <input type="texto" class="form-control" id="nombreProyecto" type="text" name="nombreProyecto" [(ngModel)]="nombreProyecto" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionProyecto">Descripción del Proyecto</label>
+                <input type="texto" class="form-control" id="descripcionProyecto" type="text" name="descripcionProyecto" [(ngModel)]="descripcionProyecto" required>
+            </div>
+            <div class="form-group">
+                <label for="imgProyecto">Url de la imagen del proyecto (sin el Https://)</label>
+                <input type="texto" class="form-control" id="imgProyecto" type="text" name="imgProyecto" [(ngModel)]="imgProyecto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="urlProyecto">Link del proyecto (sin el https://)</label>
+                <input type="texto" class="form-control" id="urlProyecto" type="text" name="urlProyecto" [(ngModel)]="urlProyecto" required>
+            </div>
+            <button class="btn btn-primary">
+                Agregar Proyecto
+            </button>   
+        </form>
+    </div>
+</div>

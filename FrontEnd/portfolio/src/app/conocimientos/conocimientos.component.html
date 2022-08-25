@@ -1,49 +1,35 @@
 <section class="conocimientos font2">
     <h1>Mis Conocimientos!</h1>
+    <div class="divbtnadd">
+        <button type="butom" class="btnadd" routerLink="/nuevoconocimento" *ngIf="isLogged">
+            <i class="bi bi-plus-square"></i>Agregar Conocimiento
+        </button>
+    </div>
     <div class="porcentaje">
-        <div class="container">
+        <div class="container" *ngFor="let Conocimientos of conoc">
             <div class="card">
                 <div class="box">
-                    <div class="porcent">
+                    <div class="porcent" style="--clr: rgb(175, 29, 163);--num:{{Conocimientos.porcentLenguaje}};">
                         <svg>
-                            <circle cx="70" cy="70" r="70"/>
-                            <circle cx="70" cy="70" r="70"/>
+                            <circle cx="70" cy="70" r="70" />
+                            <circle cx="70" cy="70" r="70" />
                         </svg>
                         <div class="number">
-                            <h2>80<span>%</span></h2>
+                            <h2>{{Conocimientos.porcentLenguaje}}<span>%</span></h2>
                         </div>
-                        <h3 class="text">Html</h3>
+                        <h3 class="text">{{Conocimientos.nombreLenguaje}}</h3>
+                        <div class="btnedityborrar">
+                            <button type="butom" class="btn btn-dark" routerLink="/conocupdate/{{Conocimientos.id}}"
+                                *ngIf="isLogged">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button type="butom" class="btn btn-dark" (click)="delete(Conocimientos.id)"
+                                *ngIf="isLogged">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="box">
-                    <div class="porcent">
-                        <svg class="svgprogres">
-                            <circle cx="70" cy="70" r="70"/>
-                            <circle cx="70" cy="70" r="70"/>
-                        </svg>
-                        <div class="number">
-                            <h2>70<span>%</span></h2>
-                        </div>
-                        <h3 class="text">Css</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="box">
-                    <div class="porcent">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"/>
-                            <circle cx="70" cy="70" r="70"/>
-                        </svg>
-                        <div class="number">
-                            <h2>40<span>%</span></h2>
-                        </div>
-                        <h3 class="text">javascript</h3>
-                    </div>
                 </div>
             </div>
         </div>

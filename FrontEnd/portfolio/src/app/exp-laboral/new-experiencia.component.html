@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreExp">Nombre de la Empresa</label>
+                <input type="texto" class="form-control" id="nombreExp" type="text" name="nombreExp" [(ngModel)]="nombreExp" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaExp">Fecha desde que año a que año</label>
+                <input type="texto" class="form-control" id="fechaExp" type="text" name="fechaExp" [(ngModel)]="fechaExp" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionExp">Descripción de la tarea</label>
+                <input type="texto" class="form-control" id="descripcionExp" type="text" name="descripcionExp" [(ngModel)]="descripcionExp" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="imgExp">URL de la imagen de la empresa sin el https://</label>
+                <input type="texto" class="form-control" id="imgExp" type="text" name="imgExp" [(ngModel)]="imgExp" required>
+            </div>
+            <button class="btn btn-primary">
+                Agregar Experiencia
+            </button>   
+        </form>
+    </div>
+</div>

@@ -8,7 +8,7 @@ import { SobreMi } from '../classes/SobreMi';
 })
 
 export class SobreMiService {
-  URL= 'http://localhost:5000/SobreMi';
+  URL= '';
 
   constructor(
     private http: HttpClient

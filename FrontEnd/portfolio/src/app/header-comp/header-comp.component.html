@@ -1,15 +1,19 @@
 <header>
     <nav>
         <div class="logoArg">
-            <img class="logoArgProg" src="../../assets/Logo-ArgProg.png" alt="">
+            <img class="logoArgProg" src="https://lh4.googleusercontent.com/PsDVnnEg64bjyD0KcDXTawlV-JlI1w2hu3PQ4KGnQTEIM2ce5BTO5xLmkHq6S5YZsO-ebgh0GEyhbJbmt_ZxDoPvZlc2a7fBN5rACCotIBMOshaLash6uc0ZIiWcKDB4Lw=w1280" alt="">
         </div>
         <div class="social">
-            <a href=""><img src="../../assets/logo-github.png" alt=""></a>
-            <a href=""><img src="../../assets/logo-linkedin.png" alt=""></a>
-            <a href=""><img src="../../assets/logo-twitter.png" alt=""></a>
-            <a href=""><img class="botonlogin" src="../../assets/boton-login-1.png" alt="Login"></a>
+            <a href=""><img src="https://lh6.googleusercontent.com/A6K580kuLydcvBLHpDh9W_0gJrUGofLiwwT_Fi-jSZUHF-HmPoZe07jsae2wh_GCkWhx0EjtZz_OWSNi0ba0790=w1280" alt=""></a>
+            <a href=""><img src="https://lh6.googleusercontent.com/jhpL6Bpsuud2ce11YnDtCyEJg3REtknQE32rU4fDkMgnQEwncT8nzc2gycFAkDk1b7BuWuI56c0m5G2cP7FkomQ=w1280" alt=""></a>
+            <a href=""><img src="https://lh4.googleusercontent.com/8u22pybSjp6Zrd86Nu21CPtP1ATjVFoPtY_8-p24foFoFgpDi3vAmZMqXzxGT_xzSufLHpIit1HfrBM8iYbb32k=w1280" alt=""></a>
+            <a href=""><img src="https://lh6.googleusercontent.com/25ohIaJ0Te75hSnHz5_qMvaN9ci3Q29rjSH6l1p2uB-PcIruXlFbdidIa4X5D5MBJDO05llvmpXHX2wsBOjHT7E=w1280" alt=""></a>
+            
+            <button type="button" class="boton.close" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
+            <a href="login"><img class="boton.login" src="https://lh5.googleusercontent.com/FUSW1lQFCkx2__GMuyzuNW3R5BoGB0kkOXa6hiwcIQweWXmyItJIxdo3VG405oTPEmbIj0dV_Zx2Podu1Lpg0mA=w1280" alt="Login" (click)="login()" *ngIf="!isLogged"></a>
         </div>
     </nav>
+    <style --bgr:background:{{Persona.img}};></style>
     <section class="textos-header font2">
         <h1>{{Persona.titulo}}</h1>
         <h2>{{Persona.nombre}} {{Persona.apellido}}</h2>

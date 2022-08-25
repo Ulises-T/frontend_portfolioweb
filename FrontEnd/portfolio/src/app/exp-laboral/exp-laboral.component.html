@@ -1,37 +1,44 @@
 <section class="experiencia-laboral font2">
     <h2 class="titulo">Experiencia Laboral</h2>
+    <div>
+
+        <div class="divbtnadd">
+            <button type="butom" class="btnadd" routerLink="/nuevaexperiencia" *ngIf="isLogged">
+                <i class="bi bi-pencil-square"></i>Agregar Experiencia
+            </button>
+
+        </div>
+        <div class="col-lg-1">
+            <div class="col-lg-11">
+                <table class="table">
+                    <tbody>
+                        <tr *ngFor="let Experiencia of expe">
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     <div class="cards">
-        <div class="card">
-            <img src="../../assets/Logo-Bolsaplast.png" alt="">
+        <div class="card" *ngFor="let Experiencia of expe">
+            <img src="https://{{Experiencia.imgExp}}" alt="">
             <div class="contenido-texto-card">
-                <h3 id="name inst">BOLSAPLAST SRL</h3>
-                <h5 id="fecha">Mayo 2021 a Actualidad:</h5>
-                <p id="tareas"> Responsable de Sub-Epedición, Gestion de ingresos, controles y almacenamiento de Materia Prima, tambien Responsable de Depósito.</p>
+                
+                    <h3 id="name inst">{{Experiencia.nombreExp}}</h3>
+                    <h5 id="fecha">{{Experiencia.fechaExp}}</h5>
+                    <p id="tareas">{{Experiencia.descripcionExp}}</p>
+
+                    <br>
+                    <div class="btn-div">
+                        <button type="butom" class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}"
+                            *ngIf="isLogged">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="butom" class="btn btn-dark" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+                            <i class="bi bi-trash"></i>
+                        </button>
             </div>
         </div>
-        <div class="card">
-            <img src="../../assets/Logo-Bolsaplast.png" alt="">
-            <div class="contenido-texto-card">
-                <h3 id="name inst">BOLSAPLAST SRL</h3>
-                <h5 id="fecha">Abril 2018 a Mayo 2021</h5>
-                <p id="tareas">Responsable de Logística, donde realizaba gesiton de unidades de tranportes, cordinación de cargas y entregas de Productos Terminados.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../../assets/Logo-Bolsaplast.png" alt="">
-            <div class="contenido-texto-card">
-                <h3 id="name inst">BOLSAPLAST SRL</h3>
-                <h5 id="fecha">Enero 2016 a Abril 2018:</h5>
-                <p id="tareas"> Recepión y Facturación, tareas de facturación y atención al cliente.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../../assets/Logo-Indo.jpg" alt="">
-            <div class="contenido-texto-card">
-                <h3 id="name inst">INDO SA</h3>
-                <h5 id="fecha">Febrero 2014 a Diciembre 2015:</h5>
-                <p id="tareas"> Encargado de Depósito, realizaba tareas administrativas dentro de obra, control de herramientas, registros de horas y consumos de materiales e insumos.</p>
-            </div>
-        </div>
+    </div>
     </div>
 </section>

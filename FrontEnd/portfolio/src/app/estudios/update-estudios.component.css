@@ -1,0 +1,5 @@
+button:not(:disabled) {
+    cursor: pointer;
+    margin-top: 10px;
+    background: blueviolet;
+}

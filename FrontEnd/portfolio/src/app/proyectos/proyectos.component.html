@@ -1,21 +1,38 @@
-    <div class="about-services font2">
-        <div class="contenedor">
-            <h2 class="titulo">Proyectos y Trabajos</h2>
-            <div class="servicio-cont">
-                <div class="servicio-ind">
-                    <img src="../../assets/ilustracion1.svg" alt="">
-                    <h3>Name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+<div class="about-services font2">
+    <div class="contenedor">
+        <h2 class="titulo">Proyectos y Trabajos</h2>
+        <div class="btnadd">
+            <button type="butom" class="bi bi-plus-square" routerLink="/nuevoproyecto" *ngIf="isLogged">
+                <i class=""></i>Agregar Proyecto
+            </button>
+        </div>
+        <div class="servicio-cont">
+
+            <div class="servicio-ind" *ngFor="let Proyecto of proy">
+                <img src="../../assets/ilustracion1.svg" alt="">
+                <h3>{{Proyecto.nombreProyecto}}</h3>
+                <p>{{Proyecto.descripcionProyecto}}</p>
+                <div class="btnedityborrar">
+                    <button type="butom" class="btn btn-dark" routerLink="/proyectupdate/{{Proyecto.id}}"
+                        *ngIf="isLogged">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button type="butom" class="btn btn-dark" (click)="delete(Proyecto.id)"
+                        *ngIf="isLogged">
+                        <i class="bi bi-trash"></i>
+                    </button>
                 </div>
-                <div class="servicio-ind">
-                    <img src="../../assets/ilustracion2.svg" alt="">
-                    <h3>Name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                </div>
-                <div class="servicio-ind">
-                    <img src="../../assets/ilustracion3.svg" alt="">
-                    <h3>Name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                </div>
+               
+            </div> 
+            <div class="servicio-ind">
+                <img src="../../assets/ilustracion2.svg" alt="">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+            </div>
+            <div class="servicio-ind">
+                <img src="../../assets/ilustracion3.svg" alt="">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
             </div>
         </div>
+    </div>

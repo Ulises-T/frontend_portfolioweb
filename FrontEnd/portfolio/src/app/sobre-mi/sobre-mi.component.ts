@@ -9,12 +9,11 @@ import { SobreMiService } from '../service/sobre-mi.service';
 })
 export class SobreMiComponent implements OnInit {
 
-  SobreMi: SobreMi = new SobreMi("");
 
-  constructor(public SobreMiService :SobreMiService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.SobreMiService.getSobreMi().subscribe(SobreMi => {this.SobreMi = SobreMi})
+  
   }
 
 }

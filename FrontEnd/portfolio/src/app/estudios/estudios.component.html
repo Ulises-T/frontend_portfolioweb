@@ -1,0 +1,41 @@
+<section class="contenedor sobre-nosotros font2">
+    <h1 class="titulo-1">Sobre Mi</h1>
+    <h2 class="titulo-2">Soy una persona entusiasta con ganas de aprender, explorar y crecer.</h2>
+
+    <div class="contenedor-sobre-nosotros font font2">
+        <img src="https://lh5.googleusercontent.com/tfpBg1mQ0S1m7HSrTBaUvjdVNDhbHMT0WTkjKP4ZJgvfCSmapBMcE8HgIHou-O5Nveq6Uq_XcTTdLBJ5mSJx7a2VSBarw_p9USplLh5k1VMylEzEUTnQiKOD_DTxsVY3fw=w1280" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+            <div>
+                <div class="divbtnadd">
+                    <button type="butom" class="btnadd" routerLink="/nuevoestudio" *ngIf="isLogged">
+                        <i class="bi bi-pencil-square"></i>Agregar Estudio
+                    </button>
+
+                </div>
+                <div class="col-lg-1">
+                    <div class="col-lg-11">
+                        <table class="table">
+                            <tbody>
+                                <tr *ngFor="let Estudios of est">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="" *ngFor="let Estudios of est">
+                <h3 id="titulo"><span>+</span>{{Estudios.nombreEst}}</h3>
+                <p id="certificado1">{{Estudios.descripcionEst}}</p>
+                <p id="certificado2">{{Estudios.fechaEst}}</p>
+                <div class="btn-editar" >
+                    <button type="butom" class="btn btn-dark" routerLink="/estupdate/{{Estudios.id}}" *ngIf="isLogged">
+                        <i class="bi bi-pencil-square"></i>EDITAR
+                    </button>
+                    <button type="butom" class="btn btn-dark" (click)="delete(Estudios.id)" *ngIf="isLogged">
+                        <i class="bi bi-trash"></i>BORRAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

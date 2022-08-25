@@ -16,6 +16,57 @@
     color: black;
 }
 
+
+.divbtnadd{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btnadd{
+    display: grid;
+    margin-top: -11px;
+    color: darkviolet;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 9px;
+    cursor: pointer;
+}
+
+.bi-plus-square::before {
+    content: "\f4fd";
+    display: block;
+}
+.btnedityborrar{
+    padding-top: 15px;
+    margin: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+.btn-dark{
+    width: 40px;
+    height: 40px;
+}
+.bi-plus-square{
+    content: "\f4ca";
+    font-size: xx-large;
+}
+
+.bi-pencil-square::before {
+    content: "\f4ca";
+    font-size: xx-large;
+}
+
+.bi-trash::before {
+    content: "\f5de";
+    font-size: xx-large;
+    color: red;
+    transition: 5s;
+    background: none;
+    border: none;
+}
+
 .porcentaje {
     display: flex;
     justify-content: center;
@@ -38,9 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 330px;
+    height: 400px;
     border-radius: 10px;
-    cursor: pointer;
     text-align: center;
     transition: 0.5s;
     margin-top: 23px;
@@ -135,22 +185,14 @@ svg circle {
 svg circle:nth-child(2) {
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
+    
 }
 
 .card:nth-child(1) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 80)/100);
-    stroke: rgb(175, 29, 163);
+    stroke: var(--clr);   
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
 }
 
-.card:nth-child(2) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 80)/100);
-    stroke: rgb(175, 29, 163);
-}
-
-.card:nth-child(3) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 30)/100);
-    stroke: rgb(175, 29, 163);
-}
 
 @media only screen and (max-width:600px) {
     .porcentaje {
