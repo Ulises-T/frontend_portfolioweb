@@ -10,6 +10,8 @@ import { NewConocimentoComponent } from './conocimientos/new-conocimento.compone
 import { UpdateConociementoComponent } from './conocimientos/update-conociemento.component';
 import { NewProyectoComponent } from './proyectos/new-proyecto.component';
 import { UpdateProyectoComponent } from './proyectos/update-proyecto.component';
+import { NewContactemeComponent } from './contacteme/new-contacteme.component';
+import { UpdateContactemeComponent } from './contacteme/update-contacteme.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +23,10 @@ const routes: Routes = [
   { path: 'nuevoconocimento', component: NewConocimentoComponent},
   { path: 'conocupdate/:id', component: UpdateConociementoComponent},
   { path: 'nuevoproyecto', component: NewProyectoComponent},
-  {path: 'proyectupdate/:id', component: UpdateProyectoComponent}
+  {path: 'proyectupdate/:id', component: UpdateProyectoComponent},
+  {path: 'nuevocontacteme', component: NewContactemeComponent},
+  {path: 'contupdate/:id', component: UpdateContactemeComponent}
+
 ];
 
 @NgModule({

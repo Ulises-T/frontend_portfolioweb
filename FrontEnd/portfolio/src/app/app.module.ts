@@ -8,7 +8,6 @@ import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ExpLaboralComponent } from './exp-laboral/exp-laboral.component';
 import { ConocimientosComponent } from './conocimientos/conocimientos.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
-import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
@@ -23,6 +22,9 @@ import { NewConocimentoComponent } from './conocimientos/new-conocimento.compone
 import { UpdateConociementoComponent } from './conocimientos/update-conociemento.component';
 import { NewProyectoComponent } from './proyectos/new-proyecto.component';
 import { UpdateProyectoComponent } from './proyectos/update-proyecto.component';
+import { ContactemeComponent } from './contacteme/contacteme.component';
+import { NewContactemeComponent } from './contacteme/new-contacteme.component';
+import { UpdateContactemeComponent } from './contacteme/update-contacteme.component';
 
 
 
@@ -36,7 +38,6 @@ import { UpdateProyectoComponent } from './proyectos/update-proyecto.component';
     ExpLaboralComponent,
     ConocimientosComponent,
     ProyectosComponent,
-    FooterComponent,
     LoginComponent,
     HomeComponent,
     NewExperienciaComponent,
@@ -48,6 +49,10 @@ import { UpdateProyectoComponent } from './proyectos/update-proyecto.component';
     UpdateConociementoComponent,
     NewProyectoComponent,
     UpdateProyectoComponent,
+    ContactemeComponent,
+    NewContactemeComponent,
+    UpdateContactemeComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+<footer>
+    <div class="divbtnadd">
+        <button type="butom" class="btnadd" routerLink="/nuevocontacteme" *ngIf="isLogged">
+            <i class="bi bi-pencil-square"></i>Agregar Contacteme
+        </button>
+    </div>
+    
+    <div class="contenedor-footer font2">
+        <div class="content-foo" *ngFor="let Contacteme of  contacte">
+            <h4>{{Contacteme.tipoContacto}}</h4>
+            <p>{{Contacteme.direccionContacto}}</p>
+            <div class="btnedityborrar">
+                <button type="butom" class="btn btn-dark" routerLink="/contupdate/{{Contacteme.id}}"
+                    *ngIf="isLogged">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+                <button type="butom" class="btn btn-dark" (click)="delete(Contacteme.id)"
+                    *ngIf="isLogged">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; UlisesFT | Tataren Fernando Ulises</h2>
+</footer>

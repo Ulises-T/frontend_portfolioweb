@@ -41,7 +41,6 @@ public class CExperiencia {
     }
 
     //Crear experiencia
-    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoExperiencia dtoexp){
         if (StringUtils.isBlank(dtoexp.getNombreExp())) 
