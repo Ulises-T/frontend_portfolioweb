@@ -180,6 +180,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 13px;
     }
     .cards .card {
         width: 90%;
@@ -199,8 +200,21 @@ footer {
         align-items: center;
     }
     .cards .card img {
-        width: 90px;
-        height: 90px;
+        width: 62px;
+        height: 64px;
+    }
+    .btnadd {
+        width: 90%;
+        height: 61px;
+        margin: 1% auto;
+        background-color: #4d0686;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        border-color: #4d0686;
+        align-items: center;
+        cursor: pointer;
     }
 }
 

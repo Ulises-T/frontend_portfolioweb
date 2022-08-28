@@ -23,11 +23,11 @@
         <div class="card" *ngFor="let Experiencia of expe">
             <img src="https://{{Experiencia.imgExp}}" alt="">
             <div class="contenido-texto-card">
-                
+                <div class="textexpe">
                     <h3 id="name inst">{{Experiencia.nombreExp}}</h3>
                     <h5 id="fecha">{{Experiencia.fechaExp}}</h5>
                     <p id="tareas">{{Experiencia.descripcionExp}}</p>
-
+                </div>
                     <br>
                     <div class="btn-div">
                         <button type="butom" class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}"

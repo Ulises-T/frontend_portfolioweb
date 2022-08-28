@@ -12,13 +12,24 @@
                 <input type="texto" class="form-control" id="descripcionProyecto" type="text" name="descripcionProyecto" [(ngModel)]="descripcionProyecto" required>
             </div>
             <div class="form-group">
-                <label for="imgProyecto">Url de la imagen del proyecto (sin el Https://)</label>
-                <input type="texto" class="form-control" id="imgProyecto" type="text" name="imgProyecto" [(ngModel)]="imgProyecto" required>
+                <label for="basic-url">Url de la imagen del proyecto </label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://
+                        </span>
+                    </div>
+                    <input type="texto" class="form-control" id="imgProyecto" type="text" name="imgProyecto" [(ngModel)]="imgProyecto" required>
+                </div>
             </div>
-            
             <div class="form-group">
-                <label for="urlProyecto">Link del proyecto (sin el https://)</label>
-                <input type="texto" class="form-control" id="urlProyecto" type="text" name="urlProyecto" [(ngModel)]="urlProyecto" required>
+                <label for="basic-url">Link del proyecto</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://
+                        </span>
+                    </div>
+                    <input type="texto" class="form-control" id="urlProyecto" type="text" name="urlProyecto" [(ngModel)]="urlProyecto" required>
+                </div>
             </div>
             <button class="btn btn-primary">
                 Agregar Proyecto

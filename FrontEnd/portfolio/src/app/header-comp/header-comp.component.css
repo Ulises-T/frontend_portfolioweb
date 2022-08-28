@@ -12,6 +12,27 @@ header {
     position: relative;
 }
 
+nav {
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+.divbtnsecion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-direction: column-reverse
+}
+
 .logoArgProg {
     width: 200px;
     margin-top: 25;
@@ -44,10 +65,6 @@ header {
     width: 60px;
 }
 
-.social img:hover {
-    transform: translateY(-10px);
-    width: 60px;
-}
 
 img.boton.login {
     width: 40px;
@@ -61,6 +78,7 @@ button.boton\.close {
     border-radius: 50%;
     border-color: #ffff;
 }
+
 
 header .textos-header {
     display: flex;
@@ -84,6 +102,8 @@ header .textos-header {
 }
 
 .wave {
+    height: 150px;
+    overflow: hidden;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -92,22 +112,35 @@ header .textos-header {
 @media screen and (max-width:900px) {
     header {
         background-position: center;
-        
     }
+
+    .banner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width:500px) {
     .social {
         display: flex;
-        flex-wrap: wrap;
         padding: 10px 0 0 0;
         justify-items: center;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin-top: 10px;
-        margin-right: 20%;
-        margin-left: 20%;
+        margin-top: 9px;
+        margin-right: 4%;
+        margin-left: 4%;
+        flex-direction: row;
+        display: table-column;
+    }
+    .wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
     }
     .logoArgProg {
         width: 130px;
@@ -116,13 +149,60 @@ header .textos-header {
         margin-right: 0%;
         margin-left: 0%;
     }
+
     .textos-header h1 {
         font-size: 35px;
     }
+
     .textos-header h2 {
         font-size: 20px;
     }
+
     .titulo-final {
         font-size: 20px;
+    }
+
+   
+button.boton\.close{
+    width: 34px;
+    height: 34px;
+    font-size: 8px;
+    margin-block: 38px;
+    border-radius: 50%;
+    border-color: #ffff;
+}
+}
+
+@media screen and (max-width: 300px) {
+    .textos-header h1 {
+        font-size: 15px;
+    }
+
+    .social {
+        display: flex;
+        padding: 10px 0 0 0;
+        justify-items: center;
+        margin-top: 9px;
+        flex-direction: row;
+        display: contents;
+    }
+
+    header {
+        width: 100%;
+        height: 495px;
+        background: #fff;
+        background: linear-gradient(to right, hsla(340, 96%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(https://cdn.pixabay.com/photo/2017/09/26/15/13/computer-2788918_960_720.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        margin-bottom: -36px;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 56px;
+        overflow: hidden;
     }
 }

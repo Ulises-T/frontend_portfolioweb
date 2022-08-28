@@ -4,10 +4,13 @@
     margin: 10px;
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 .btnadd{
-    display: contents;
-    color:darkviolet;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 .btnedityborrar{
     padding-top: 15px;
@@ -22,15 +25,16 @@
     cursor: pointer;
 }
 .bi-plus-square{
-    content: "\f4ca";
-    font-size: larger;
-    padding: 7px;
-    margin-top: 10px;
-    margin-left: 7px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: center;
+    display: grid;
+    margin-top: -11px;
+    color: darkviolet;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 9px;
+    cursor: pointer;
+    min-width: auto;
+    height: 60px;
+    font-size: unset;
 }
 
 .bi-pencil-square::before {
@@ -89,6 +93,7 @@
     .servicio-ind {
         width: 100%;
         text-align: center;
+        border-bottom: 1px solid #f2f2f2;
     }
     .servicio-ind:nth-child(1),
     .servicio-ind:nth-child(2) {
