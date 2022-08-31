@@ -9,9 +9,10 @@
         <div class="servicio-cont">
 
             <div class="servicio-ind" *ngFor="let Proyecto of proy">
-                <img src="../../assets/ilustracion1.svg" alt="">
+                <img src="{{Proyecto.imgProyecto}}" alt="">
                 <h3>{{Proyecto.nombreProyecto}}</h3>
                 <p>{{Proyecto.descripcionProyecto}}</p>
+                <p>{{Proyecto.urlProyecto}}</p>
                 <div class="btnedityborrar">
                     <button type="butom" class="btn btn-dark" routerLink="/proyectupdate/{{Proyecto.id}}"
                         *ngIf="isLogged">

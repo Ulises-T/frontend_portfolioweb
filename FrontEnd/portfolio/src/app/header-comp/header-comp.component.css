@@ -27,11 +27,13 @@ nav {
 
 .divbtnsecion {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-right: 20px;
-    flex-direction: column-reverse
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 39px;
 }
+
 
 .logoArgProg {
     width: 200px;

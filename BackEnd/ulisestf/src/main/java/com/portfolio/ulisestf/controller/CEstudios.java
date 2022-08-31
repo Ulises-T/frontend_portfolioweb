@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/estudios")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://miportfoliopersonal-bfa5b.web.app")
 public class CEstudios {
 
     @Autowired
@@ -39,7 +39,6 @@ public class CEstudios {
     }
 
     //Crear experiencia
-
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoEstudios dtoestudios) {
         if (StringUtils.isBlank(dtoestudios.getNombreEst())) {

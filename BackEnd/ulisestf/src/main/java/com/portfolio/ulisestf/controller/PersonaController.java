@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://miportfoliopersonal-bfa5b.web.app")
 public class PersonaController {
 
     @Autowired
@@ -27,21 +27,21 @@ public class PersonaController {
         return ipersonaService.getPersona();
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @PostMapping("personas/crear")
     public String createPersona(@RequestBody Persona persona) {
         ipersonaService.savePersona(persona);
         return "Persona creada correctamente";
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+   
     @DeleteMapping("personas/borrar/{id}")
     public String deletePersona(@PathVariable Long id) {
         ipersonaService.deletePersona(id);
         return "Persona Eliminada correctamente";
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+  
     @PutMapping("personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
                                 @RequestParam("nombre") String nuevoNombre,

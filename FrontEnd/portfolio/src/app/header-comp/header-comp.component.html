@@ -13,19 +13,20 @@
                 <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png" alt=""></a>
             </div>
         </div>
-          <div class="divbtnsecion">
+        <div class="divbtnsecion">
+            <div class="boton.login">
                 <a href="login"><img class="boton.login" src="https://img.icons8.com/fluency/48/000000/test-account.png"
                         alt="Login" (click)="login()" *ngIf="!isLogged"></a>
-                <button type="button" class="boton.close" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
             </div>
+            <button type="button" class="boton.close" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
+        </div>
     </nav>
     <style --bgr:background:{{Persona.img}};></style>
     <section class="textos-header font2">
         <h1>{{Persona.titulo}}</h1>
         <h2>{{Persona.nombre}} {{Persona.apellido}}</h2>
     </section>
-    <div class="wave"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
+    <div class="wave"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
             <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                 style="stroke: none; fill: #fff;"></path>
         </svg></div>

@@ -9,8 +9,8 @@ import { Persona } from '../classes/Persona';
   providedIn: 'root'
 })
 export class EstudiosService {
-  estURL = 'http://localhost:8080/estudios/';
-  URL= 'http://localhost:8080/personas/';
+  estURL = 'https://backendulises.herokuapp.com/estudios/';
+  URL= 'https://backendulises.herokuapp.com/personas/';
 
 
   constructor(private httpClient: HttpClient) { }

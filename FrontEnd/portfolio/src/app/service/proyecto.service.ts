@@ -7,7 +7,7 @@ import { Proyecto } from '../classes/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-  proyURL = 'http://localhost:8080/proyectos/'
+  proyURL = 'https://backendulises.herokuapp.com/proyectos/'
 
   constructor(private httpClient: HttpClient) { }
 

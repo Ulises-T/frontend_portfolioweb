@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactemeService {
-  contURL = 'http://localhost:8080/contacteme/' 
+  contURL = 'https://backendulises.herokuapp.com/contacteme/' 
 
   constructor(private httpClient: HttpClient) { }
 
