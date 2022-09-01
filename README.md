@@ -34,6 +34,15 @@ Y por utlimo tenemos el lenguaje de etiquetado, de estilos y un framework mas:
 ### Pagina principal 📄
 ![image](https://pbs.twimg.com/media/FbiRCA4WQAAhuAO?format=jpg&name=small)
 
+### Componente Estudios 📄
+![image](https://raw.githubusercontent.com/Ulises-T/PORTAFOLIO-ARG-PROG/master/FrontEnd/img/captura%20proyecto%201.jpg)?format=jpg&name=small)
+
+### Componente Experiencia Laboral 📄
+![image](https://github.com/Ulises-T/PORTAFOLIO-ARG-PROG/blob/master/FrontEnd/img/captura%20proyecto%202.jpg?format=jpg&name=small)
+
+### Organigrama 📄
+![image](https://github.com/Ulises-T/PORTAFOLIO-ARG-PROG/blob/master/FrontEnd/img/OrganigramaPorfolioUlisesTataren.jpg?format=jpg&name=small)
+
 
 
 ## Reconocimientos 📚
