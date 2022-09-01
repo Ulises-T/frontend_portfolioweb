@@ -33,6 +33,7 @@ Y por utlimo tenemos el lenguaje de etiquetado, de estilos y un framework mas:
 
 ### Pagina principal 📄
 ![image](https://pbs.twimg.com/media/FbiRCA4WQAAhuAO?format=jpg&name=small)
+![image](https://github.com/Ulises-T/PORTAFOLIO-ARG-PROG/blob/master/FrontEnd/img/captura%20proyecto%201.jpg?raw=true)
 
 
 ## Reconocimientos 📚
