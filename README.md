@@ -29,11 +29,11 @@ Y por utlimo tenemos el lenguaje de etiquetado, de estilos y un framework mas:
   - ![image](https://img.icons8.com/color/25/undefined/css3.png) CSS `se utiliza tanto en el frontend como en el template`
   - ![image](https://img.icons8.com/color/25/undefined/bootstrap.png) Bootstrap `framework para trabajar con componentes y estilos`
 
-## Imagenenes del portfolio 📷
+## Imagenen del portfolio 📷
 
 ### Pagina principal 📄
 ![image](https://pbs.twimg.com/media/FbiRCA4WQAAhuAO?format=jpg&name=small)
-![image](https://github.com/Ulises-T/PORTAFOLIO-ARG-PROG/blob/master/FrontEnd/img/captura%20proyecto%201.jpg?raw=true)
+
 
 
 ## Reconocimientos 📚
