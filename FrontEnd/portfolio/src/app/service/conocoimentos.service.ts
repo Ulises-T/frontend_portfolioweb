@@ -7,7 +7,7 @@ import { Conocimiento } from '../classes/conocimiento';
   providedIn: 'root'
 })
 export class ConocoimentosService {
-  URL= 'https://backendulises.herokuapp.com/conocimientos/';
+  URL= 'https://portafolio-arg-prog-production.up.railway.app/conocimientos/';
 
 
   constructor(private httpClient: HttpClient) { }
