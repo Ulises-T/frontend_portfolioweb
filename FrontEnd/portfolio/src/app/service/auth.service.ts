@@ -9,7 +9,7 @@ import { JwtDto } from '../classes/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://portafolio-arg-prog-production.up.railway.app/auth/'
+  authURL = 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/auth/'
 
   constructor(private httpClient: HttpClient) { }
 
