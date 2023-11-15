@@ -20,7 +20,7 @@ export class UpdateContactemeComponent implements OnInit {
       data =>{
         this.updconta = data;
       }, err =>{
-        alert("Error al intentar modificar esta experiencia");
+        alert("Error al intentar modificar este contacto");
         this.router.navigate(['']);
       }
     )

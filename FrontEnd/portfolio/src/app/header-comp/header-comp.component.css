@@ -16,6 +16,9 @@ nav {
     display: flex;
 }
 
+.btn-edit{
+    background-color: red
+}
 .banner {
     display: flex;
     flex-direction: row;

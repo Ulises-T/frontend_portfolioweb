@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/contacteme")
 @CrossOrigin(origins = "https://miportfoliopersonal-bfa5b.web.app")
+/*@CrossOrigin(origins = "http://localhost:4200")*/
 public class CContacteme {
        @Autowired
        SContacteme sContacteme;

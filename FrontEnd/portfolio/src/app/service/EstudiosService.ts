@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Estudios } from '../classes/estudios';
+import { Estudios } from '../classes/Estudios';
 import { Persona } from '../classes/Persona';
 
 
@@ -9,8 +9,13 @@ import { Persona } from '../classes/Persona';
   providedIn: 'root'
 })
 export class EstudiosService {
-  estURL = 'https://backendulises.herokuapp.com/estudios/';
+  /*estURL = 'https://backendulises.herokuapp.com/estudios/';
   URL= 'https://backendulises.herokuapp.com/personas/';
+*/
+  
+   estURL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app.app/estudios/';
+   URL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/personas/';
+  
 
 
   constructor(private httpClient: HttpClient) { }

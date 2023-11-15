@@ -4,11 +4,11 @@
     <div class="row">
         <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
             <div class="form-group">
-                <label for="tipoContacto">Nombre de la Empresa</label>
+                <label for="tipoContacto">Tipo de Contacto</label>
                 <input type="texto" class="form-control" id="tipoContacto" type="text" name="tipoContacto" [(ngModel)]="tipoContacto" required>
             </div>
             <div class="form-group">
-                <label for="direccionContacto">Fecha desde que año a que año</label>
+                <label for="direccionContacto">Dirección, N° Telefono, email, etc</label>
                 <input type="texto" class="form-control" id="direccionContacto" type="text" name="direccionContacto" [(ngModel)]="direccionContacto" required>
             </div>
             <button class="btn btn-primary">

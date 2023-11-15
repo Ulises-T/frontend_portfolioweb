@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Estudios } from '../classes/estudios';
+import { Estudios } from '../classes/Estudios';
 import { Persona } from '../classes/Persona';
 import { EstudiosService } from "../service/EstudiosService";
 import { TokenService } from '../service/token.service';
