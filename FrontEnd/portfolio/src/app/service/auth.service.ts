@@ -11,10 +11,8 @@ import { JwtDto } from '../classes/jwt-dto';
 export class AuthService {
   /*
   authURL = 'https://backendulises.herokuapp.com/auth/'
-  
-  authURL = 'https://portafolio-arg-prog-production.up.railway.app/auth/'
   */
-  authURL = 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/auth/'
+  authURL = 'https://portafolio-arg-prog.vercel.app/auth/'
   
 
   constructor(private httpClient: HttpClient) { }
