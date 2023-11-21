@@ -13,9 +13,10 @@ export class EstudiosService {
   URL= 'https://backendulises.herokuapp.com/personas/';
 */
   
-   estURL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app.app/estudios/';
-   URL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/personas/';
-  
+
+  estURL = 'https://portafolio-arg-prog-production.up.railway.app/estudios/';
+  URL= 'https://portafolio-arg-prog-production.up.railway.app/personas/';
+
 
 
   constructor(private httpClient: HttpClient) { }

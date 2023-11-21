@@ -7,11 +7,7 @@ import { Persona } from '../classes/Persona';
   providedIn: 'root'
 })
 export class PersonaServiceService {
- /* URL= 'https://backendulises.herokuapp.com/personas/';
-
-  */
-   URL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/personas/';
-  
+  URL= 'https://backendulises.herokuapp.com/personas/';
   
 
   constructor(

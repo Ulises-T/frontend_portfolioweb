@@ -9,11 +9,7 @@ import { JwtDto } from '../classes/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  /*
   authURL = 'https://backendulises.herokuapp.com/auth/'
-  */
-  authURL = 'https://portafolio-arg-prog.vercel.app/auth/'
-  
 
   constructor(private httpClient: HttpClient) { }
 

@@ -7,12 +7,8 @@ import { Proyecto } from '../classes/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-   /*proyURL = 'https://backendulises.herokuapp.com/proyectos/'
+  proyURL = 'https://backendulises.herokuapp.com/proyectos/'
 
- */
-
-  proyURL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/proyectos/';
-  
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyecto[]> {

@@ -7,11 +7,7 @@ import { Experiencia } from '../classes/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
- /* expURL = 'https://backendulises.herokuapp.com/expelab/'
-
-  */
-   expURL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/expelab/';
-  
+  expURL = 'https://backendulises.herokuapp.com/expelab/'
 
   constructor(private httpClient: HttpClient) { }
 

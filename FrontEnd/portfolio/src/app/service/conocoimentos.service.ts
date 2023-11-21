@@ -7,12 +7,7 @@ import { Conocimiento } from '../classes/conocimiento';
   providedIn: 'root'
 })
 export class ConocoimentosService {
-     URL= 'portafolio-arg-prog-hme3n7tvq-ulises-projects-1b64f4d4.vercel.app/conocimientos/';
- /* URL= 'https://backendulises.herokuapp.com/conocimientos/';
-
-  */
-
-  
+  URL= 'https://backendulises.herokuapp.com/conocimientos/';
 
 
   constructor(private httpClient: HttpClient) { }
