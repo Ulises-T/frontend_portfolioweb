@@ -14,8 +14,8 @@ export class EstudiosService {
 */
   
 
-  estURL = 'https://portafolio-arg-prog-production.up.railway.app/estudios/';
-  URL= 'https://portafolio-arg-prog-production.up.railway.app/personas/';
+  estURL = 'https://backendapp-1e86.onrender.com/estudios/';
+  URL= 'https://backendapp-1e86.onrender.com/personas/';
 
 
 

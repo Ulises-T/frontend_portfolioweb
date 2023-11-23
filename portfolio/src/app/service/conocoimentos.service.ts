@@ -7,7 +7,7 @@ import { Conocimiento } from '../classes/conocimiento';
   providedIn: 'root'
 })
 export class ConocoimentosService {
-  URL= 'https://backendulises.herokuapp.com/conocimientos/';
+  URL= 'https://backendapp-1e86.onrender.com/conocimientos/';
 
 
   constructor(private httpClient: HttpClient) { }

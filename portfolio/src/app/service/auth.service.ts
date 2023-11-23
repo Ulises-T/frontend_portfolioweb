@@ -9,7 +9,7 @@ import { JwtDto } from '../classes/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backendulises.herokuapp.com/auth/'
+  authURL = 'https://backendapp-1e86.onrender.com/auth/'
 
   constructor(private httpClient: HttpClient) { }
 
